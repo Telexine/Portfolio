@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Resume  </title>
+    <meta name="description" content="Tachid Boonpipat – Student">
+    <title>Portfolio</title>
+    <script src='resource/js/jquery.min.js'></script>
+    <link rel="stylesheet" href="resource/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+
+
+    <script src="resource/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Style.css">
+
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.1.3/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.1.3/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.1.3/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.1.3/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.1.3/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+ 
+
+    <link rel="stylesheet" href="resource/css/less-compiled.css">
+    <script src="resource/js/modernizr.js"></script>
+    <link rel="stylesheet" href="resource/css/animate.css">
+
+    <style>
+
+        /**
+        *  Skill Bar
+        */
+
+
+
+
+        @-webkit-keyframes LoadIn {
+            0% {
+                width: 0px;
+            }
+        }
+        @-moz-keyframes LoadIn {
+            0% {
+                width: 0px;
+            }
+        }
+        @-ms-keyframes LoadIn {
+            0% {
+                width: 0px;
+            }
+        }
+        @-o-keyframes LoadIn {
+            0% {
+                width: 0px;
+            }
+        }
+        @keyframes LoadIn {
+            0% {
+                width: 0px;
+            }
+        }
+        .skills-wrapper {
+            width: 80%;
+            overflow: hidden;
+            postition: relative;
+            margin-top: 30px;
+            height: 100%;
+            background: transparent;
+            margin: 0 auto;
+            -moz-transition: all 1s;
+            -o-transition: all 1s;
+            -webkit-transition: all 1s;
+            transition: all 1s;
+            padding-top: 20px;
+        }
+
+
+        .bar {
+            visibility: hidden;
+            height: 3em;
+            margin: .5em 0;
+            background: transparent;
+            color: transparent;
+            -moz-transition: all 1s;
+            -o-transition: all 1s;
+            -webkit-transition: all 1s;
+            transition: all 1s;
+        }
+        .bar span {
+            line-height: 3em;
+            margin-left: .5em;
+            font-weight: bold;
+        }
+        .enabled .bar {
+            visibility: visible;
+            -webkit-animation: LoadIn 0.75s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            -moz-animation: LoadIn 0.75s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            -ms-animation: LoadIn 0.75s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            -o-animation: LoadIn 0.75s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            animation: LoadIn 0.75s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            color: white;
+        }
+        .enabled .bar:nth-child(2) {
+            -webkit-animation: LoadIn 0.85s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            -moz-animation: LoadIn 0.85s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            -ms-animation: LoadIn 0.85s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            -o-animation: LoadIn 0.85s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            animation: LoadIn 0.85s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+        }
+        .enabled .bar:nth-child(3) {
+            -webkit-animation: LoadIn 0.95s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            -moz-animation: LoadIn 0.95s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            -ms-animation: LoadIn 0.95s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            -o-animation: LoadIn 0.95s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            animation: LoadIn 0.95s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+        }
+        .enabled .bar:nth-child(4) {
+            -webkit-animation: LoadIn 1.05s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            -moz-animation: LoadIn 1.05s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            -ms-animation: LoadIn 1.05s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            -o-animation: LoadIn 1.05s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+            animation: LoadIn 1.05s cubic-bezier(0.75, 0.15, 0.25, 1.2);
+        }
+        .bar.coding {
+            background: #343838;
+        }
+        .bar.Design {
+            background: #00B4CC;
+        }
+        .bar.Jpn {
+            background: cadetblue;
+        }
+        .bar.Eng {
+            background: salmon;
+        }
+
+
+
+        a{
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        a:hover{
+            color: black;
+
+        }
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+<div class="site-wrapper animated slideInDown " id="top">
+
+    <div class="site-wrapper-inner one-edge-shadow  ">
+
+        <div class="cover-container">
+
+        <div class="tbnavbar">
+            <div class="tbnavbar left">
+                <div class="tbnavbar item logo">
+                    <a href="#" onclick='goToLink("index.html");'>
+                    Tachid Boonpipat<br>
+                    <span style="color: palevioletred">58121090-3 IT <br>minimalism</span> <br>
+                    </a>
+                </div>
+
+
+
+            </div>
+
+            <div class="menu-bg"></div>
+            <div class="menu-burger">☰</div>
+            <div class="menu-items">
+                <a href="#" onclick='goToLink("index.html");' >Home</a>
+                <a href="#" onclick='goToLink("timeline.html");'>Timeline</a>
+                <a href="#" onclick='goToLink("portfolio.html");'>Portfolio</a></div>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<a href="#" class="scrollToTop" title="Go Top"><i class="sprite scrollarrow"></i></a>
+
+<div class="body animated slideInUp " id="body">
+
+    <div id="history">
+
+        <span  class="spaceheader">it's me!</span><br><br>
+        <span style="font-size: x-large">"</span>Tachid, Tae or Tee <span style="font-size: x-large">"</span>
+
+
+        <div class="mainblock" style="background: inherit;height: auto">
+
+            <img src="resource/img/me.jpg" class="avatar"style="margin-bottom: 30px"><br><br>
+            <span style="font-size: 3vw">
+            As Tachid Boonpipat a<span class="hText"> IT guy </span> that can do both: <br>
+            <span style="color: palevioletred">Design</span> and<span style="color:palevioletred"> Backend</span>
+            based on UX principle and Agile project management.
+            </span>
+
+        <div style="margin-top: 100px;margin-bottom: 50px">
+            <span class="spaceheader">skills</span><br><br>
+            <div class="skills-wrapper" >
+                <div class="bar coding" style="width: 88%;text-align: left">
+                    <span>Coding</span>
+                </div>
+                <div class="bar Design" style="width: 95%;text-align: left">
+                    <span>Design</span>
+                </div>
+                <div class="bar Jpn" style="width: 30%;text-align: left">
+                    <span>Japanese Proficiency</span>
+                </div>
+                <div class="bar Eng" style="width: 82%;text-align: left">
+                    <span>English Proficiency</span>
+                </div>
+            </div>
+
+</div>
+
+        </div>
+        <div class="parrallax-content">
+            <div class="parrallax">
+            </div>
+        </div>
+        <div class="mainblock" style="height: auto;margin-top: 0px"  >
+
+            <div style="margin: 0px 10px 10px 10px">
+                <div style="padding-top: 20px">
+                    <span class="spaceheader">biography</span><br><br>
+                </div>
+
+                <div style="font-size: 2.5vw;text-align: left;margin: 40px 40px auto">
+                    Studying at Thai-Nichi Institute of Technology <br>
+                    &nbsp; &#10084; Single<br>
+                    <br><br>
+                    <b style="color: #18171e">What I want to be :</b>  Project Lead / Web designer / Software Engineer  <br>
+                    <b style="color: #18171e">What I dont want to be :</b> work in very dull work. <br>
+                    <b style="color: #18171e">What the is the phases that describe you  :</b> "Focus on the results, not the action." <br>
+                    <br>
+                    <a href="#"  style=" letter-spacing: 2px;border-bottom-width: 1px;" onclick='goToLink("https://www.instagram.com/maheswaranlll/")'>ig</a>
+                    / tanuki360@hotmail.com <br><br>
+                    "I love to Try something new in Framework and Language to practice skill and make a new friends"<br>
+                    <br>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+        <div class="mainblock" style="background: inherit;height:auto ;padding: 15px 25px 15px 25px"  >
+            <span class="spaceheader" style=" margin-bottom: 50px">gallary</span><br><br><br><br><br>
+
+
+
+
+
+
+            <div class="pic pic-3d">
+                <img src="resource/img/m4.jpg" class="pic-image" alt="Pic"/>
+                <span class="pic-caption open-down">
+		        <h1 class="pic-title">Relay for Rpi <br>cc</h1>
+		        <p>July 2017</p>
+		    </span>
+            </div>
+
+
+            <div class="pic pic-3d">
+                <img src="resource/img/IMG_20170101_143746.jpg" class="pic-image" alt="Pic"/>
+                <span class="pic-caption open-down">
+		        <h1 class="pic-title">Whiteline</h1>
+		        <p>July 2017</p>
+		    </span>
+            </div>
+
+            <div class="pic pic-3d">
+                <img src="resource/img/IMG_20170205_143221.jpg" width="150"  class="pic-image" alt="Pic"/>
+                <span class="pic-caption open-down">
+		        <h1 class="pic-title">Selfie =D</h1>
+		        <p>January 2017</p>
+		    </span>
+            </div>
+
+            <div class="pic pic-3d">
+                <img src="resource/img/me6.jpg" class="pic-image" alt="Pic"/>
+                <span class="pic-caption open-down">
+		        <h1 class="pic-title">Agoda HQ</h1>
+		        <p>October 2016</p>
+		    </span>
+            </div>
+
+   
+ 
+            <div class="pic pic-3d">
+                <img src="resource/img/me5.jpg" class="pic-image" width="130"  alt="Pic"/>
+                <span class="pic-caption open-down">
+		        <h1 class="pic-title">With my bro</h1>
+		        <p>January 2017</p>
+		    </span>
+            </div>
+
+
+
+     
+
+
+            <div class="pic pic-3d">
+                <img src="resource/img/me7.jpg" class="pic-image" alt="Pic"/>
+                <span class="pic-caption open-down">
+		        <h1 class="pic-title">ACM 2016</h1>
+		        <p>September 2016</p>
+		    </span>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <div class="bottom">
+
+        <div style="text-align: center;padding: 60px 130px 0px 130px;font-size: large;
+">  <br> <span style="font-size: large;"></span>
+            There will always be expectations that others have from us. The difference between those caught in the trap of perfectionism and those who are not is the extent to which these expectations are internalized and prioritized. <span style="font-size: large">"</span>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    function goToLink(URL) {
+
+            document.getElementById("top").className += " animated slideOutUp ";
+            document.getElementById("body").className += " slideOutDown";
+
+            setTimeout(function () { location.href= URL ; }, 1000);
+    };
+</script>
+
+
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+
+</html>
