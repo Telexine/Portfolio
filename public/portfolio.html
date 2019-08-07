@@ -37,7 +37,7 @@
                     <div class="tbnavbar item logo">
                         <a href="#" onclick='goToLink("index.html");'>
                             Tachid Boonpipat<br>
-                            <span style="color: palevioletred">58121090-3 IT <br>minimalism</span> <br>
+                            <span style="color: #484c7f">58121090-3 IT <br>minimalism</span> <br>
                         </a>
                     </div>
 
@@ -75,9 +75,9 @@
 
 
 
-        <div class="jumbotron" style="background:#eee;margin-top: 160px">
+        <div class="jumbotron" style="background:#484c7f;margin-top: 160px">
             <div class="container-fluid">
-                   <span style="font-size: 3vw;color: #333">
+                   <span style="font-size: 3vw;color: #ffffff">
                     Things I have worked in programming field (only)
                     </span>
             </div>
@@ -122,12 +122,12 @@
                 <img src="resource/img/w4.png" class="pic-image" alt="Pic"/>
                 <span class="pic-caption open-down">
 		        <h1 class="pic-title"><br><br><br><br>Pixchat App ( Ionic2 / angular 2 / firebase )</h1>
-		        <p>2016 - present</p>
+		        <p>2016</p>
 		    </span>
             </div>
         </div>
 
-        <div style="margin-top: 40px" onclick='goToLink("https://www.jnc-machinery.co.th/");'>
+        <div style="margin-top: 40px" onclick='gogit("https://www.jnc-machinery.co.th/");'>
             <div class="pic pic-3d" style="max-width: 80%;max-height: inherit">
                 <img src="resource/img/JNC.png" class="pic-image" alt="Pic"/>
                 <span class="pic-caption open-down">
@@ -137,7 +137,7 @@
             </div>
         </div>
 
-        <div style="margin-top: 40px"  onclick='goToLink("http://www.dinosaur-nongnooch.com");' >
+        <div style="margin-top: 40px"  onclick='gogit("https://www.dinosaur-nongnooch.com");' >
             <div  class="pic pic-3d" style="max-width: 80%;max-height: inherit">
                 <img src="resource/img/nn.png" class="pic-image" alt="Pic"/>
                 <span class="pic-caption open-down">
@@ -147,7 +147,69 @@
             </div>
         </div>
 
+        
+        <div style="margin-top: 40px"  onclick='gogit("https://github.com/Telexine/KubeKeras")' >
+            <div  class="pic pic-3d" style="max-width: 80%;max-height: inherit">
+                <img src="resource/img/cl.png" class="pic-image" alt="Pic"/>
+                <span class="pic-caption open-down">
+		        <h1 class="pic-title"><br><br><br><br>Dockerize version of Machine Learning Anime Drawing (colorize)
+                </h1>
+		        <p>2018 Oct</p>
+		    </span>
+            </div>
+        </div>
 
+        <div style="margin-top: 40px"  onclick='gogit("https://github.com/Telexine/Friend-Drop-Cordova");' >
+            <div  class="pic pic-3d" style="max-width: 80%;max-height: inherit">
+                <img src="resource/img/fd.png" class="pic-image" alt="Pic"/>
+                <span class="pic-caption open-down">
+		        <h1 class="pic-title"><br><br><br><br>Friend Drop Cordova (Cordova + web-component App Project for oppinion in nearby place) </h1>
+		        <p>2018 Dec</p>
+		    </span>
+            </div>
+        </div>
+
+
+        <div style="margin-top: 40px"  onclick='gogit("https://github.com/Telexine/Child-Maker-UI")' >
+            <div  class="pic pic-3d" style="max-width: 80%;max-height: inherit">
+                <img src="resource/img/cm.png" class="pic-image" alt="Pic"/>
+                <span class="pic-caption open-down">
+		        <h1 class="pic-title"><br><br><br><br>Child Maker - Generate Child from parent image with Docker</h1>
+		        <p>2019 Mar</p>
+		    </span>
+            </div>
+        </div>
+
+        <div style="margin-top: 40px"  onclick='gogit("https://github.com/Telexine/Fizbee-People-In-Area")' >
+            <div  class="pic pic-3d" style="max-width: 80%;max-height: inherit">
+                <img src="resource/img/Fizbee-poster.jpg" class="pic-image" alt="Pic"/>
+                <span class="pic-caption open-down">
+		        <h1 class="pic-title"><br><br><br><br>Lightweight Responsive PWA Offline capability WebApp for Monitor Crowd in the area with historical data by utilizing Bluetooth monitor
+                </h1>
+		        <p>2019 Mar</p>
+		    </span>
+            </div>
+        </div>
+
+        <div style="margin-top: 40px"  onclick='gogit("https://github.com/Telexine/Convert-matlab-matrix-number-to-png-image-with-python");' >
+            <div  class="pic pic-3d" style="max-width: 80%;max-height: inherit">
+                <img src="resource/img/matlabconv.png" class="pic-image" alt="Pic"/>
+                <span class="pic-caption open-down">
+		        <h1 class="pic-title"><br><br><br><br>(Experiment) Convert matlab's matrix number into png image with python </h1>
+		        <p>2019 Apr</p>
+		    </span>
+            </div>
+        </div>
+
+        <div style="margin-top: 40px"  onclick='gogit("https://www.aquarad-exotic.com/");' >
+            <div  class="pic pic-3d" style="max-width: 80%;max-height: inherit">
+                <img src="resource/img/aex.png" class="pic-image" alt="Pic"/>
+                <span class="pic-caption open-down">
+		        <h1 class="pic-title"><br><br><br><br>Aquarad-Exotic website  ( Wordpress / CSS / HTML / SEO )</h1>
+		        <p>2019 June</p>
+		    </span>
+            </div>
+        </div>
 
 
 
@@ -177,13 +239,20 @@
 
 
 <script>
+    function gogit(URL) {
+        setTimeout(function () { window.open(URL, '_blank'); ; }, 0);
+    };
+
+    
     function goToLink(URL) {
 
         document.getElementById("top").className += " animated slideOutUp ";
         document.getElementById("body").className += " slideOutDown";
+ 
 
         setTimeout(function () { location.href= URL ; }, 1000);
-    };
+};
+
 </script>
 
 

@@ -40,7 +40,7 @@ a{
 }
 
 .hText{
-    color: palevioletred;
+    color: #484c7f;
 }
 .spaceheader {
     font-size: 150px;
@@ -101,7 +101,7 @@ a{
 }
 
 .menu-bg {
-    background: palevioletred;
+    background: #484c7f;
     pointer-events: none;
     -webkit-transition: .3s;
     transition: .3s;
@@ -195,7 +195,7 @@ Body
     .mainblock{
 
         margin-top: 50px;
-        background: palevioletred;
+        background: #484c7f;
         height: 400px;
         z-index: -1;
     }
@@ -227,7 +227,7 @@ Timeline
     position: relative;
     margin: 0 auto;
     width: 6px;
-    height: 1050px;
+    height: 1024px;
     background-color: #e9edf0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -312,7 +312,7 @@ Bottom
 .bottom{
 
     background-color: rgb(244, 244, 244);
-    background: palevioletred;
+    background: #484c7f;
     margin-bottom: 0px;
     height: 150px;
     z-index: -1;

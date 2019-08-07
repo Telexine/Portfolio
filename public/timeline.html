@@ -66,7 +66,7 @@
                     <div class="tbnavbar item logo">
                         <a href="#" onclick='goToLink("index.html");'>
                             Tachid Boonpipat<br>
-                            <span style="color: palevioletred">58121090-3 IT <br>minimalism</span> <br>
+                            <span style="color: #484c7f">58121090-3 IT <br>minimalism</span> <br>
                         </a>
                     </div>
 
@@ -128,7 +128,7 @@
         <ul id="Timeline_event_3" class="Timeline_event disable ">
 
             <li class="Timeline_year">
-                <p>2013 - 2014</p>
+                <p>2014 - 2015</p>
             </li>
             <li class="Timeline_text">
                 <p>PRINTONLINE Co., Ltd. <br><span class="hText" style="font-size: smaller">Module intregration Programmer</span> <br></p>
@@ -143,10 +143,13 @@
         <ul id="Timeline_event_4" class="Timeline_event disable ">
 
             <li class="Timeline_year">
-                <p>2014 - Present</p>
+                <p>2018 (4 months)</p>
             </li>
             <li class="Timeline_text">
-                <p>Thai-Nichi Institute of Technology<br><span class="hText" style="font-size: smaller">IT Bachelor Degree</span> </p>
+                <p>Cybertron Co., Ltd.<br><span class="hText" style="font-size: smaller">Internship</span> </p>
+                <p style="font-size:inherit">
+                    &nbsp;- PHP<br> &nbsp;- Javascript<br>&nbsp;- HTML<br>
+                   </p>
             </li>
 
         </ul>
@@ -154,17 +157,20 @@
         <ul id="Timeline_event_5" class="Timeline_event disable ">
 
             <li class="Timeline_year">
-                <p>2016 - Present</p>
+                <p>2016 - 2019</p>
             </li>
             <li class="Timeline_text">
-                <p>--------- Co. Ltd <br> <br><span class="hText" style="font-size: smaller"> Programmer </span> </p>
+                <p>Thai-Nichi Institute of Technology<br><span class="hText" style="font-size: smaller">IT Bachelor Degree</span> </p>
+                <p style="font-size:inherit">
+                    &nbsp;- GPAX 3.53
+                   </p>
             </li>
 
         </ul>
+ 
 
 
-
-    </div>
+    </div> 
 
 
 
@@ -183,29 +189,24 @@
 
 
 <script>
-
-    $(window).scroll(function(){
+ 
+  
         $('.Timeline_event ').each(function(){
-            var scrollTop     = $(window).scrollTop(),
-                    elementOffset = $(this).offset().top,
-                    distance      = (elementOffset - scrollTop),
-                    windowHeight  = $(window).height(),
-                    breakPoint    = windowHeight*0.8;
-                    that = this;
-            if(distance < breakPoint) {
+ 
+            
                 $(this).removeClass("disable");
                 $(this).addClass(" animated fadeInRight");
                 $(this).removeClass("   paddRight");
 
-            }  if(distance > breakPoint) {
+ 
 
-                $(this).addClass(" paddRight ");
-                $(this).removeClass("   fadeInRight ");
-                setTimeout(function () { $('.Timeline_event').addClass(" disable "); }, 300);
-            }
+    
         });
 
-    });
+
+  
+ 
+ 
 
 
 
